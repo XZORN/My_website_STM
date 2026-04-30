@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal academic website for a condensed matter physics PhD working with scanning tunneling microscopy."
+    />
+    <title>Your Name | STM & Condensed Matter Physics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark">STM</span>
+        <span class="brand-text">Your Name</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Condensed Matter Physics PhD · Scanning Tunneling Microscopy</p>
+          <h1>Probing quantum materials one atom at a time.</h1>
+          <p class="hero-copy">
+            I use low-temperature STM/STS to visualize electronic states in correlated and topological materials,
+            connecting atomic-scale spectroscopy with emergent quantum phases.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#publications">View Publications</a>
+            <a class="button secondary" href="mailto:your.email@university.edu">Email Me</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Research snapshot">
+          <div>
+            <span class="panel-label">Method</span>
+            <strong>LT-STM / STS</strong>
+          </div>
+          <div>
+            <span class="panel-label">Focus</span>
+            <strong>Quantum materials</strong>
+          </div>
+          <div>
+            <span class="panel-label">Signals</span>
+            <strong>LDOS · QPI · Defects</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section intro" id="research">
+        <div class="section-kicker">Research</div>
+        <div class="intro-grid">
+          <div>
+            <h2>Atomic-scale imaging for strongly interacting electrons.</h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              My work sits at the interface of surface preparation, cryogenic instrumentation, and spectroscopic
+              mapping. I am interested in how local disorder, symmetry breaking, and moire-scale structure shape the
+              electronic wavefunctions of low-dimensional materials.
+            </p>
+            <p>
+              Current directions include quasiparticle interference analysis, impurity-bound states, superconducting
+              gap inhomogeneity, and STM-compatible device/sample architectures.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section specs" aria-label="Experimental profile">
+        <article class="spec">
+          <span>01</span>
+          <h3>Spectroscopy Maps</h3>
+          <p>dI/dV grids, LDOS visualization, Fourier analysis, and energy-resolved electronic texture.</p>
+        </article>
+        <article class="spec">
+          <span>02</span>
+          <h3>Cryogenic UHV</h3>
+          <p>Low-noise measurements, clean surfaces, sample transfer workflows, and long-duration stability.</p>
+        </article>
+        <article class="spec">
+          <span>03</span>
+          <h3>Quantum Materials</h3>
+          <p>Correlated phases, topological bands, superconductors, moire systems, and atomically thin samples.</p>
+        </article>
+        <article class="spec">
+          <span>04</span>
+          <h3>Data Analysis</h3>
+          <p>Python-based pipelines for drift correction, filtering, fitting, visualization, and reproducibility.</p>
+        </article>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Projects</div>
+            <h2>Selected Work</h2>
+          </div>
+          <p>Replace these examples with your actual systems, collaborators, and measurement conditions.</p>
+        </div>
+        <div class="project-list">
+          <article class="project">
+            <div class="project-index">A</div>
+            <div>
+              <h3>Local electronic structure near engineered defects</h3>
+              <p>
+                Spectroscopic maps around controlled disorder sites to separate intrinsic electronic responses from
+                tip/sample artifacts.
+              </p>
+            </div>
+            <ul>
+              <li>Atomically resolved topographs</li>
+              <li>Energy-dependent LDOS</li>
+              <li>Model comparison</li>
+            </ul>
+          </article>
+          <article class="project">
+            <div class="project-index">B</div>
+            <div>
+              <h3>Quasiparticle interference in low-dimensional materials</h3>
+              <p>
+                Fourier-space analysis of standing-wave patterns to infer scattering channels, symmetry constraints,
+                and band reconstruction.
+              </p>
+            </div>
+            <ul>
+              <li>QPI extraction</li>
+              <li>Drift correction</li>
+              <li>Band-aware fitting</li>
+            </ul>
+          </article>
+          <article class="project">
+            <div class="project-index">C</div>
+            <div>
+              <h3>STM-ready sample preparation and device interfaces</h3>
+              <p>
+                Developing clean, stable measurement workflows for fragile quantum materials and heterostructures.
+              </p>
+            </div>
+            <ul>
+              <li>UHV transfer</li>
+              <li>Cleavage/growth protocols</li>
+              <li>Measurement automation</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section publications" id="publications">
+        <div class="section-heading compact">
+          <div>
+            <div class="section-kicker">Publications</div>
+            <h2>Recent Papers</h2>
+          </div>
+          <a class="text-link" href="#" aria-label="Google Scholar profile">Google Scholar</a>
+        </div>
+        <ol class="paper-list">
+          <li>
+            <span class="paper-year">2026</span>
+            <div>
+              <h3>Title of your latest STM paper goes here</h3>
+              <p><strong>Your Name</strong>, Collaborator A, Collaborator B. <em>Journal Name</em>.</p>
+            </div>
+            <a href="#" aria-label="Paper link">DOI</a>
+          </li>
+          <li>
+            <span class="paper-year">2025</span>
+            <div>
+              <h3>Quasiparticle interference study in a correlated two-dimensional material</h3>
+              <p><strong>Your Name</strong>, Collaborator A, Collaborator B. <em>Preprint / Journal</em>.</p>
+            </div>
+            <a href="#" aria-label="Paper link">PDF</a>
+          </li>
+          <li>
+            <span class="paper-year">2024</span>
+            <div>
+              <h3>Atomic-scale spectroscopy of defect-induced bound states</h3>
+              <p>Collaborator A, <strong>Your Name</strong>, Collaborator B. <em>Journal Name</em>.</p>
+            </div>
+            <a href="#" aria-label="Paper link">arXiv</a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section notes" id="notes">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Notes</div>
+            <h2>Research Notes</h2>
+          </div>
+          <p>Short technical posts can make the site feel alive without turning it into a blog-heavy layout.</p>
+        </div>
+        <div class="note-grid">
+          <a class="note" href="#">
+            <span>Methods</span>
+            <h3>Practical drift correction for large spectroscopic grids</h3>
+            <p>How I align long STM maps before Fourier-space analysis.</p>
+          </a>
+          <a class="note" href="#">
+            <span>Instrumentation</span>
+            <h3>What makes a stable low-temperature STM measurement?</h3>
+            <p>A concise checklist from sample prep to tunneling setpoint.</p>
+          </a>
+          <a class="note" href="#">
+            <span>Reading</span>
+            <h3>Papers I return to when thinking about QPI</h3>
+            <p>A living bibliography for spectroscopy and electronic scattering.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <div class="section-kicker">Contact</div>
+          <h2>Open to collaborations on STM, spectroscopy, and quantum materials.</h2>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:your.email@university.edu">your.email@university.edu</a>
+          <span>Department of Physics, Your University</span>
+          <span>Office / Lab: Building, Room 000</span>
+          <div class="socials">
+            <a href="#">CV</a>
+            <a href="#">GitHub</a>
+            <a href="#">ORCID</a>
+            <a href="#">Scholar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Your Name</span>
+      <span>Built for atomic-scale science.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

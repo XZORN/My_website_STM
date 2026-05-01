@@ -475,6 +475,19 @@ h3 {
   align-self: start;
 }
 
+.feature-copy h2 {
+  max-width: 430px;
+  font-size: clamp(2.2rem, 3.4vw, 3.6rem);
+  line-height: 1.04;
+}
+
+.feature-copy p:not(.label) {
+  max-width: 390px;
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
 .feature-grid,
 .note-list {
   display: grid;

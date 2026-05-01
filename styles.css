@@ -401,7 +401,9 @@ h3 {
 }
 
 .profile .section-title h2 {
-  max-width: 560px;
+  max-width: 420px;
+  font-size: clamp(2rem, 3vw, 3.1rem);
+  line-height: 1.08;
 }
 
 .section-title .label,
@@ -441,8 +443,8 @@ h3 {
 
 .fact-list div {
   display: grid;
-  grid-template-columns: 152px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: minmax(210px, 0.34fr) minmax(0, 1fr);
+  gap: 28px;
   padding: 16px 0;
   border-bottom: 1px solid var(--line);
 }
@@ -451,7 +453,7 @@ h3 {
   color: var(--ink);
   font-size: 0.7rem;
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 

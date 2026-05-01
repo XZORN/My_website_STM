@@ -197,12 +197,12 @@ a {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.46fr);
-  gap: 72px;
+  grid-template-columns: 1fr;
+  gap: 44px;
   width: min(calc(100% - 48px), var(--max));
-  min-height: 760px;
+  min-height: 720px;
   margin: 0 auto;
-  padding: 54px 0 76px;
+  padding: 54px 0 72px;
 }
 
 .cover-topline {
@@ -220,8 +220,10 @@ a {
 
 .cover-copy {
   align-self: center;
-  max-width: 760px;
-  padding: 74px 0 32px;
+  justify-self: center;
+  max-width: 1040px;
+  padding: 66px 0 16px;
+  text-align: center;
 }
 
 .label {
@@ -247,11 +249,11 @@ h2,
 }
 
 h1 {
-  max-width: 760px;
-  margin-bottom: 24px;
-  font-size: clamp(4.4rem, 10vw, 8.4rem);
+  max-width: 1040px;
+  margin: 0 auto 24px;
+  font-size: clamp(3.8rem, 6.4vw, 6.5rem);
   font-weight: 500;
-  line-height: 0.95;
+  line-height: 0.98;
 }
 
 h2 {
@@ -270,7 +272,8 @@ h3 {
 }
 
 .hero-subtitle {
-  margin-bottom: 22px;
+  max-width: 880px;
+  margin: 0 auto 22px;
   color: var(--ink);
   font-size: 0.78rem;
   font-weight: 500;
@@ -281,7 +284,7 @@ h3 {
 
 .dek {
   max-width: 660px;
-  margin-bottom: 0;
+  margin: 0 auto;
   color: var(--muted);
   font-size: 1rem;
 }
@@ -289,6 +292,7 @@ h3 {
 .cover-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   margin-top: 38px;
 }
@@ -327,8 +331,11 @@ h3 {
 
 .cover-card {
   align-self: end;
+  justify-self: center;
+  width: min(100%, 620px);
   padding-top: 22px;
   border-top: 1px solid var(--line);
+  text-align: center;
 }
 
 .cover-card p {
@@ -391,6 +398,10 @@ h3 {
 
 .section-title {
   padding-top: 3px;
+}
+
+.profile .section-title h2 {
+  max-width: 560px;
 }
 
 .section-title .label,
@@ -672,23 +683,33 @@ h3 {
   display: grid;
   grid-template-columns: minmax(260px, 0.7fr) minmax(300px, 0.45fr);
   gap: 48px;
-  width: min(calc(100% - 48px), var(--max));
-  margin: 0 auto;
-  padding: 112px 0;
-  background: var(--bg);
-  color: var(--ink);
+  width: 100%;
+  min-height: calc(100svh - 78px);
+  margin: 0;
+  padding: 112px max(24px, calc((100vw - var(--max)) / 2));
+  background: #050505;
+  color: #ffffff;
+}
+
+.contact::after {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contact .label {
+  border-color: rgba(255, 255, 255, 0.24);
+  color: #ffffff;
 }
 
 address {
   align-self: end;
   padding-top: 22px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  color: rgba(255, 255, 255, 0.72);
   font-style: normal;
 }
 
 address a {
-  color: var(--ink);
+  color: #ffffff;
   font-weight: 400;
 }
 
@@ -696,10 +717,12 @@ address a {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  width: min(calc(100% - 48px), var(--max));
-  margin: 0 auto;
-  padding: 28px 0 42px;
-  color: var(--muted);
+  width: 100%;
+  margin: 0;
+  padding: 28px max(24px, calc((100vw - var(--max)) / 2)) 42px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  background: #050505;
+  color: rgba(255, 255, 255, 0.56);
   font-size: 0.78rem;
 }
 
@@ -797,10 +820,15 @@ address a {
   .cover-frame,
   .section,
   .feature,
-  .method,
+  .method {
+    width: calc(100% - 32px);
+  }
+
   .contact,
   .site-footer {
-    width: calc(100% - 32px);
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .cover-frame {
@@ -808,7 +836,7 @@ address a {
   }
 
   h1 {
-    font-size: clamp(3.4rem, 17vw, 4.7rem);
+    font-size: clamp(3rem, 14vw, 4.2rem);
   }
 
   h2 {
@@ -842,7 +870,8 @@ address a {
   .method,
   .contact {
     gap: 30px;
-    padding: 82px 0;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 
   .cover::after,
